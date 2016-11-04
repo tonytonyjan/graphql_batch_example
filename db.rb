@@ -24,6 +24,7 @@ end
 DB.create_table :posts_tags do
   foreign_key :post_id, :posts
   foreign_key :tag_id, :tags
+  unique %i(post_id tag_id)
 end
 
 SEED.each do |table_name, rows|
