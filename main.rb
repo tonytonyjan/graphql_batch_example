@@ -15,4 +15,4 @@ query = %(
     }
   }
 )
-Schema.execute query
+pp Schema.execute query
